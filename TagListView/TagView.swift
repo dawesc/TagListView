@@ -219,7 +219,7 @@ open class TagView: UIButton {
     // MARK: - layout
 
     override open var intrinsicContentSize: CGSize {
-        var size = titleLabel?.text?.size(withAttributes: [NSAttributedString.Key.font: textFont]) ?? CGSize.zero
+        var size = super.intrinsicContentSize
         size.height = textFont.pointSize + paddingY * 2
         if let at = self.tagAttributedTitle{
             self.titleLabel?.lineBreakMode = .byClipping
