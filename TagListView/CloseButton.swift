@@ -8,7 +8,8 @@
 
 import UIKit
 
-public class CloseButton: UIButton {
+@objcMembers
+@objc public class CloseButton: UIButton {
 
     var iconSize: CGFloat = 10
     var lineWidth: CGFloat = 1

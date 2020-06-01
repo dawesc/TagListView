@@ -14,7 +14,8 @@ import UIKit
 }
 
 @IBDesignable
-open class TagListView: UIView {
+@objcMembers
+@objc open class TagListView: UIView {
     
     @IBInspectable open dynamic var textColor: UIColor = .white {
         didSet {
